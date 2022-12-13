@@ -8,7 +8,6 @@ require('dotenv').config();
 const app = express();
 
 // Middlewares antes de las rutas
-app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 app.use(helmet());
 app.use(cors());
